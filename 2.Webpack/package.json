@@ -1,0 +1,23 @@
+{
+  "name": "1.npm_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run install-missing-dependencies && npm run build && npm run serve",
+    "install-missing-dependencies": "npm i",
+    "build": "webpack --config webpack.config.js",
+    "serve": "http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "webpack": "^5.90.3",
+    "webpack-cil": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}
